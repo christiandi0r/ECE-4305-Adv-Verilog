@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module mux_2x1(
+module mux_2x1 (
     input logic x0,
     input logic x1,
     input logic s,
