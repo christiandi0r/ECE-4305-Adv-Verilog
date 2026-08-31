@@ -30,7 +30,7 @@ generate
         begin
             if (amount[i] == 1'b1) 
                 // Move the upper 2^i bits to the end to perform a rotate-left by 2^i positions.
-                stage[i+1] = {stage[i][(2**N - 1)-2**i:0], stage[i][2**N - 1 : 2**N - 2**i]};
+                stage[i+1] = {stage[i][(2**N - 1) - 2**i:0], stage[i][2**N - 1 : 2**N - 2**i]};
             else 
                 // If amount[i] is 0, pass the value to the next stage without rotating it.
                 stage[i+1] = stage[i];
