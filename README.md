@@ -30,8 +30,8 @@ ECE_4305_Adv_Verilog/
 │       └── decoder_3x8/
 │
 ├── labs/
-│   ├── lab_01/
-│   ├── lab_02/
+│   ├── lab1/
+│   ├── lab2/
 │   └── ...
 │
 └── README.md
