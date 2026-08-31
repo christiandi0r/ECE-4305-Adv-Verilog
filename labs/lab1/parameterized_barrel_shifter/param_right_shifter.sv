@@ -24,7 +24,8 @@ generate
     genvar i;
     // Create N rotation stages.
     // Stage i conditionally rotates right by 2^i positions.
-    for (i = 0; i < N; i++) 
+    for (i = 0; i < N; i++)
+    begin 
         always_comb 
         begin
             if (amount[i] == 1'b1) 
@@ -34,7 +35,7 @@ generate
                 // If amount[i] is 0, pass the value to the next stage without rotating it.
                 stage[i+1] = stage[i];
         end
-        
+    end   
 endgenerate
 
 // The last stage contains the completed rotate-right result.
