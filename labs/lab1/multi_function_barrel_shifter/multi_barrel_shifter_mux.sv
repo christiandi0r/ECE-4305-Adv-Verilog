@@ -6,7 +6,7 @@ module multi_barrel_shifter_mux
     input logic [2**N - 1:0] in,
     input logic lr, // left-right select line (left = 0, right = 1)
     input logic [N-1:0] amt,
-    input logic [2**N - 1:0] out,
+    input logic [2**N - 1:0] out
 );
 
 logic [2**N - 1:0] left_out, right_out;
@@ -34,3 +34,4 @@ param_mux_2x1 M0
     .sel(lr),
     .f(out)
 );
+endmodule
