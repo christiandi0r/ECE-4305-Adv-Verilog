@@ -72,4 +72,4 @@ Throughout the course, this repository will include work involving:
 
 ## Goal
 
-The goal of this repository is to document my progression in **digital design, SystemVerilog, FPGA development, and hardware verification** throughout ECE 4305/L.
+The goal of this repository is to document progression in **digital design, SystemVerilog, FPGA development, and hardware verification** throughout ECE 4305/L.
