@@ -26,12 +26,15 @@ generate
     // Stage i conditionally rotates right by 2^i positions.
     for (i = 0; i < N; i++) 
         always_comb 
+        begin
             if (amount[i] == 1'b1) 
                 // Move the lower 2^i bits to the front to perform a rotate-right by 2^i positions.
                 stage[i+1] = {stage[i][2**i - 1 : 0], stage[i][2**N - 1 : 2**i]};
             else 
                 // If amount[i] is 0, pass the value to the next stage without rotating it.
                 stage[i+1] = stage[i];
+        end
+        
 endgenerate
 
 // The last stage contains the completed rotate-right result.
