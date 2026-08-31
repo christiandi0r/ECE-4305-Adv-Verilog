@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module param_left_shifter
-#(parameter N = 4)
+#(parameter N)
 (
     // Input width is 2^N bits
     input  logic [2**N - 1:0] in,
