@@ -1,6 +1,6 @@
 # ECE 4305 — Advanced Digital Design Using Verilog HDL
 
-This repository contains my coursework, practice modules, and FPGA designs for **ECE 4305/L: Advanced Digital Design Using Verilog HDL**.
+This repository contains coursework, practice modules, and FPGA designs for **ECE 4305/L: Advanced Digital Design Using Verilog HDL**.
 
 The course focuses on designing, implementing, testing, and verifying digital systems using **SystemVerilog** and the **Nexys A7 FPGA**.
 
